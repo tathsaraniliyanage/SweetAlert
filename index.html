@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweetalert</title>
+    <style>
+        .container{
+           display: flex;
+           flex-wrap: wrap;   
+           flex-direction: row;
+           margin: 62px;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+        }
+        h1{
+            display: flex;
+           flex-wrap: wrap; 
+           justify-content: center; 
+        }
+        h2{
+            display: flex;
+           flex-wrap: wrap; 
+           justify-content: center; 
+           margin-top: 100px;
+        }
+        button{
+            margin-left: 110px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>SWEET ALERT</h1>
+    <div class="container">
+        <div class="box" style="background-color: pink;">
+            <h2>oops messege</h2>
+            <button onclick="showAlert()">click me!</button>
+        </div>
+        <div class="box" style="background-color: rgb(239, 150, 233);">
+            <h2>oops messege</h2>
+            <button onclick="showAlert2()">click me!</button>
+        </div>
+        <div class="box" style="background-color: rgb(38, 232, 219);">
+            <h2>oops messege</h2>
+            <button onclick="showAlert()">click me!</button>
+        </div>
+        <div class="box" style="background-color: rgb(22, 208, 81);">
+            <h2>oops messege</h2>
+            <button onclick="showAlert()">click me!</button>
+        </div>
+        <div class="box" style="background-color: rgb(249, 242, 44);">
+            <h2>oops messege</h2>
+            <button onclick="showAlert()">click me!</button>
+        </div>
+        <div class="box" style="background-color: rgb(242, 143, 164);">
+            <h2>oops messege</h2>
+            <button onclick="showAlert()">click me!</button>
+        </div>
+        <div class="box" style="background-color: rgb(237, 162, 76);">
+            <h2>oops messege</h2>
+            <button onclick="showAlert()">click me!</button>
+        </div>
+        <div class="box" style="background-color: rgb(244, 113, 113);">
+            <h2>oops messege</h2>
+            <button onclick="showAlert8()">click me!</button>
+        </div>
+    </div>
+   
+    
+    <script>
+        function showAlert() {
+            swal("Here's a message!") 
+        }
+        function showAlert2(){
+            swal("Here's a message!", "It's pretty, isn't it?")
+        }
+        function showAlert8() {
+            swal("Oops...", "Something went wrong!", "error");
+        }
+    
+      
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
