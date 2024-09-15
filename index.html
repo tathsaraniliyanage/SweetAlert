@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sweetalert</title>
     <style>
+        body {
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+          }
         .container{
            display: flex;
            flex-wrap: wrap;   
@@ -25,7 +28,7 @@
             display: flex;
            flex-wrap: wrap; 
            justify-content: center; 
-           margin-top: 100px;
+           margin-top: 110px;
         }
         button{
             margin-left: 110px; 
@@ -45,23 +48,23 @@
         </div>
         <div class="box" style="background-color: rgb(38, 232, 219);">
             <h2>oops messege</h2>
-            <button onclick="showAlert()">click me!</button>
+            <button onclick="showAlert3()">click me!</button>
         </div>
         <div class="box" style="background-color: rgb(22, 208, 81);">
             <h2>oops messege</h2>
-            <button onclick="showAlert()">click me!</button>
+            <button onclick="showAlert4()">click me!</button>
         </div>
         <div class="box" style="background-color: rgb(249, 242, 44);">
             <h2>oops messege</h2>
-            <button onclick="showAlert()">click me!</button>
+            <button onclick="showAlert5()">click me!</button>
         </div>
         <div class="box" style="background-color: rgb(242, 143, 164);">
             <h2>oops messege</h2>
-            <button onclick="showAlert()">click me!</button>
+            <button onclick="showAlert6()">click me!</button>
         </div>
         <div class="box" style="background-color: rgb(237, 162, 76);">
             <h2>oops messege</h2>
-            <button onclick="showAlert()">click me!</button>
+            <button onclick="showAlert7()">click me!</button>
         </div>
         <div class="box" style="background-color: rgb(244, 113, 113);">
             <h2>oops messege</h2>
@@ -76,6 +79,13 @@
         }
         function showAlert2(){
             swal("Here's a message!", "It's pretty, isn't it?")
+        }
+        function showAlert3(){
+        Swal.fire({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success"
+          });
         }
         function showAlert8() {
             swal("Oops...", "Something went wrong!", "error");
