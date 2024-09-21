@@ -97,7 +97,11 @@
                 swal("=OK!", "You clicked the button!", "Confirmation successful");
                 }
         function showAlert7(){
-                    swal("=OK!", "You clicked the button!", "Confirmation successful");
+            swal({
+                title: "Sweet!",
+                text: "Here's a custom image.",
+                imageUrl: "images/thumbs-up.jpg"
+              })
                     }
         function showAlert8() {
             swal("Oops...", "Something went wrong!", "error");
